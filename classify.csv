@@ -1,0 +1,34 @@
+most_important_feature,related_cancers
+hbm_total_degree,Bladder Cancer
+genebody_LINE,"Lung cancer, Colorectal cancer"
+genebody_SINE,"Breast cancer, Prostate cancer"
+hbm_total_degree,Bladder Cancer
+genebody_H1hescH3k4me3,Kidney Cancer
+thyroid_gland,thyroid cancer
+micropeptide_aa_avg,Melanoma
+genebody_Gm12878H3k4me1,Stomach Cancer 
+TSS5k_Gm12878H3k27ac,adrenal gland
+TSS5k_K562H3k27ac,not enouogh research 
+TSS5k_Gm12878H3k4me3,thyroid cancer
+prostate_gland,"adrenal,bone,liver,lung"
+genebody_K562H3k27ac,peritoneum cancer 
+genebody_Gm12878H3k27ac,"liver ,lung"
+TSS1k_Gm12878H3k4me3,"brain, bone "
+TSS1k_H1hescH3k27ac,"adrenal, lung"
+genebody_K562H3k4me3,not enouogh research 
+TSS5k_H1hescH3k4me1,"skin, lung, liver "
+TSS1k_H1hescH3k4me3,colorectal cancer
+TSS5k_Gm12878H3k4me1,Bladder Cancer
+TSS1k_Gm12878H3k27ac,"Bone, brain, liver, lung, skin, muscle"
+genebody_Gm12878H3k4me3,"Bone, liver, lung"
+TSS1k_K562H3k4me3,not enouogh research 
+TSS5k_H1hescH3k27ac,kidney
+genebody_H1hescH3k4me1,Ovary
+genebody_K562H3k4me1,melanoma
+TSS1k_K562H3k27ac,"ovary,bladder"
+TSS5k_K562H3k4me3,not enouogh research 
+TSS1k_H1hescH3k4me1,"liver ,lung"
+lung,"brain, bone "
+testis,"stomach,lung"
+TSS5k_K562H3k4me1,"adrenal,kidney"
+TSS1k_K562H3k4me1,not enouogh research 
