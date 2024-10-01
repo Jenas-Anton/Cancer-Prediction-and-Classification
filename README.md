@@ -145,6 +145,8 @@ run_ML_pipeline(report='roc_auc_curve', file_path='path_to_data_file', model_id=
 
 This app offers a groundbreaking approach by incorporating long non-coding RNAs to enhance cancer detection, providing earlier diagnosis and more targeted treatment strategies. This tool has the potential to revolutionize cancer research and save lives by offering precision and sensitivity beyond the reach of traditional methods.
 
+---
+
 ##🚀 Try It Out!
 You can test this Cancer Prediction and Classification tool for free on our Hugging Face Space:
 Cancer Prediction & Classification Space
