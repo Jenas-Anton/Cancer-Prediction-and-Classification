@@ -21,8 +21,10 @@
 7. [Usage](#usage)
 8. [Conclusion](#conclusion)
 
+---
 
-## The Challenge: Complexity of Cancer
+<details>
+  <summary><strong>## The Challenge: Complexity of Cancer</strong></summary>
 
 Cancer is not a single disease but a spectrum of hundreds of diseases, each with numerous variations driven by genetic, epigenetic, and molecular changes.
 
@@ -31,8 +33,10 @@ Cancer is not a single disease but a spectrum of hundreds of diseases, each with
 - **Traditional Methods**: Focus on mutations in protein-coding genes or protein biomarkers.
 - **Limitations**: These approaches often detect cancer too late, lack sensitivity, and fail to predict cancer behavior accurately.
 - **Missed Indicators**: Critical cancer development signals, particularly in aggressive or early-stage cancers, may be overlooked.
+</details>
 
-## Our Solution: This App Incorporates Long Non-Coding RNAs (lncRNAs)
+<details>
+  <summary><strong>## Our Solution: This App Incorporates Long Non-Coding RNAs (lncRNAs)</strong></summary>
 
 ### Role of lncRNAs
 
@@ -41,8 +45,10 @@ Long non-coding RNAs (lncRNAs) are essential regulators of gene expression, infl
 ### Previous Oversight
 
 Traditional methods have largely ignored lncRNAs, missing out on vital data necessary for fully understanding cancer development and progression.
+</details>
 
-## Advantages of This App
+<details>
+  <summary><strong>## Advantages of This App</strong></summary>
 
 ### 1. Precision and Sensitivity
 - **Early Detection**: This app captures regulatory signals invisible to traditional methods, enhancing early cancer detection.
@@ -52,8 +58,10 @@ Traditional methods have largely ignored lncRNAs, missing out on vital data nece
 
 ### 3. Comprehensive Data Integration
 - **Holistic View**: The app combines genomic, expression, epigenetic, and molecular interaction data to provide a detailed cancer molecular landscape.
+</details>
 
-## The Urgency
+<details>
+  <summary><strong>## The Urgency</strong></summary>
 
 ### Critical Juncture
 Traditional methods have limitations and can only advance so much further. New data from next-generation sequencing and computational biology offer opportunities to deepen our understanding.
@@ -61,10 +69,10 @@ Traditional methods have limitations and can only advance so much further. New d
 ### Need for Evolution
 - **Adaptation**: This app represents the next frontier in cancer detection, leveraging lncRNAs to advance prediction, diagnosis, and treatment.
 - **Impact**: This approach offers potential for earlier detection, more effective treatment, and the possibility of saving countless lives.
+</details>
 
----
-
-## Functions Overview
+<details>
+  <summary><strong>## Functions Overview</strong></summary>
 
 ### `get_data()`
 - **Purpose**: Loads and preprocesses the dataset from `feature_set.csv`, combining it with positive and negative lncRNA gene lists. It selects important features using `ExtraTreesClassifier` and returns the feature matrix (`X`) and labels (`y`).
@@ -74,13 +82,10 @@ Traditional methods have limitations and can only advance so much further. New d
 
 ### `run_ML_pipeline(report, file_path, model_id)`
 - **Purpose**: Executes a machine learning pipeline including training, prediction, and evaluation. Supports generating a confusion matrix, ROC AUC curve, or prediction results with the most important features.
-- **Parameters**:
-  - `report`: The type of report to generate (`'confusion_matrix'`, `'roc_auc_curve'`, or `'prediction_result'`).
-  - `file_path`: Path to the user's data file.
-  - `model_id`: The model to use (`'RF'` for Random Forest).
+</details>
 
----
-## Usage
+<details>
+  <summary><strong>## Usage</strong></summary>
 
 ### 1. Loading Data
 
@@ -88,66 +93,3 @@ To begin using this app, you'll need to load and preprocess your dataset using t
 
 ```python
 X, y = get_data()
-```
-
-### 2. Running the Application
-
-The application uses **Streamlit** to provide a user-friendly interface for cancer prediction and classification.
-
-To run the application, open a terminal and type the following command:
-
-```bash
-streamlit run app.py
-```
-
-### 3. Input File
-
-To make predictions, you will need to upload your data through the app’s interface.
-
-1. In the web application, you will see an **upload box**.
-2. Upload the input file (`input.csv`) that contains your data.
-   
-Ensure your input file is in `.csv` format and properly structured with the relevant features.
-
----
-
-## Visual Reports: Confusion Matrix and AUC Curve
-
-Once the machine learning pipeline runs, the application generates reports to help visualize the model's performance.
-
-### Confusion Matrix
-
-The **confusion matrix** is a table that summarizes the classification performance, showing the number of:
-- **True Positives (TP)**: Correctly predicted positive cases.
-- **True Negatives (TN)**: Correctly predicted negative cases.
-- **False Positives (FP)**: Incorrectly predicted as positive when it's actually negative.
-- **False Negatives (FN)**: Incorrectly predicted as negative when it's actually positive.
-
-This matrix helps you understand the accuracy of the predictions and where the model might be making mistakes.
-
-You can choose to generate the confusion matrix by specifying `'confusion_matrix'` in the `report` parameter of the `run_ML_pipeline()` function:
-
-```python
-run_ML_pipeline(report='confusion_matrix', file_path='path_to_data_file', model_id='RF')
-```
-### AUC ROC (Receiver Operating Characteristic) Curve
-
-The **ROC AUC Curve** (Receiver Operating Characteristic - Area Under the Curve) is a graphical representation of a classification model’s performance. It illustrates the relationship between:
-
-- **True Positive Rate (Sensitivity)**: Proportion of actual positives that are correctly identified.
-- **False Positive Rate (1 - Specificity)**: Proportion of actual negatives that are incorrectly identified as positives.
-
-The AUC score, ranging from 0.5 to 1, indicates how well the model distinguishes between classes:
-
-- **0.5**: Random guessing (the model has no discriminative power).
-- **1**: Perfect classification (the model distinguishes all classes correctly).
-
-You can generate the ROC AUC curve by setting the `report` parameter to `'roc_auc_curve'` in the `run_ML_pipeline()` function:
-
-```python
-run_ML_pipeline(report='roc_auc_curve', file_path='path_to_data_file', model_id='RF')
-```
-
-## Conclusion
-
-This app offers a groundbreaking approach by incorporating long non-coding RNAs to enhance cancer detection, providing earlier diagnosis and more targeted treatment strategies. This tool has the potential to revolutionize cancer research and save lives by offering precision and sensitivity beyond the reach of traditional methods.
